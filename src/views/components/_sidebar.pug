@@ -1,0 +1,20 @@
+-
+  var menuItems = [
+    {icon: 'icon-home', name: 'Hotel'},
+    {icon: 'icon-aircraft-take-off', name: 'Flight'},
+    {icon: 'icon-key', name:'Car Rental'},
+    {icon: 'icon-map', name:'Tours'}
+  ];
+
+nav.sidebar
+  ul.side-nav
+    each menuItem in menuItems
+      li(
+        class=`side-nav__item ${ menuItem.name === 'Hotel' ? 'side-nav__item--active' : '' }`
+      )
+        a.side-nav__link(href="#")
+          svg.side-nav__icon
+            use(xlink:href=`img/sprite.svg#${menuItem.icon}`)
+          span= menuItem.name
+
+  .legal &copy; 2017 by Trillo. All rights reserved.

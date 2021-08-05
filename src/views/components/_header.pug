@@ -1,0 +1,29 @@
+header.header
+  //LOGO
+  img.logo(src="img/logo.png", alt="Logo")
+
+  //SEARCH FORM
+  form.search(action="#")
+    input.search__input(type="text", placeholder="Search hotels")/
+    button.search__button
+      svg.search__icon
+        use(xlink:href="img/sprite.svg#icon-magnifying-glass")
+
+  //USER NAV
+  nav.user-nav
+    //USER NAV - NOTIFICATION
+    .user-nav__icon-box
+      svg.user-nav__icon
+        use(xlink:href="img/sprite.svg#icon-bookmark").
+      span.user-nav__notification 7
+
+    //USER NAV - CHAT
+    .user-nav__icon-box
+      svg.user-nav__icon
+        use(xlink:href="img/sprite.svg#icon-chat").
+      span.user-nav__notification 13
+
+    //USER NAV - USER NAME & PHOTO
+    .user-nav__user
+      img.user-nav__user-photo(src="img/saitama.png", alt="User Photo")
+      span.user-nav__user-name Saitama

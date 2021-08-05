@@ -1,0 +1,16 @@
+.overview
+  h1.overview__heading Hotel Las Palmas
+
+  .overview__stars
+    each val in [1, 2, 3, 4, 5]
+      svg.overview__star-icon
+        use(xlink:href="img/sprite.svg#icon-star")
+
+  .overview__location
+    svg.overview__location-icon
+      use(xlink:href="img/sprite.svg#icon-location-pin")
+    a.overview__location-name(href="#") Albufeira, Portugal
+
+  .overview__rating
+    .overview__rating-average 8.6
+    .overview__rating-count 429 votes
